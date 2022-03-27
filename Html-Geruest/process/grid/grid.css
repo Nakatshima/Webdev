@@ -1,0 +1,20 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 0;
+    row-gap: 0;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: rbga(242,121,53,5);
+}
+
+.item2{
+    grid-area: 1/1/3/3;
+    background: rbga(0,255,255,5);
+}

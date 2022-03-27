@@ -1,0 +1,10 @@
+.flexbox{
+    display: flex;
+    background: blue;
+    color: white;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+
+}

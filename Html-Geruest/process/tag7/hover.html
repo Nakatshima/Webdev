@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vm;
+        }
+    
+        .zeile{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 4rem;
+            font-family: 'Courier New', Courier, monospace;
+            animation-name: accordeon;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    
+        .transforms:hover .second{
+            transform: translateY(20px);
+            animation-delay: 0.5;
+        }
+        .transforms:hover .third{
+            transform: translateY(40px);
+            animation-delay: 1.5;
+        }
+        .transforms:hover .forth{
+            transform: translateY(60px);
+            animation-delay: 2;
+        }
+    
+        .transforms:hover .fifth{
+            transform: translateY(80px);
+            animation-delay: 2.5;
+        }
+    
+        @keyframes accordeon {
+            0%{ transform: translateY(0px);}
+            100%{transform: translateY(100px);}
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="transforms">
+        <div class="zeile first">MOVE MOVE MOVE</div>
+        <div class="zeile second">MOVE MOVE MOVE</div>
+        <div class="zeile third">MOVE MOVE MOVE</div>
+        <div class="zeile forth">MOVE MOVE MOVE</div>
+        <div class="zeile fifth">MOVE MOVE MOVE</div>
+
+    </div>
+    
+</body>
+</html>

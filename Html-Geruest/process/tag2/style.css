@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&family=Shizuru&display=swap');
+
+h1{
+    color:bisque;
+    text-align: center;
+    font-size: 100px;
+    background-color: brown;
+}
+
+@font-face{
+    font-family: myFirstFont;
+    src: url(AdobeClean-Bold.otf);
+}
+
+p{
+    font-family: "myFirstFont";
+    color: violet;
+}

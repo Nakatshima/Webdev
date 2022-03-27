@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= drowning >
+    <img src="/pictures/drowning.png" alt="drowning">
+</div>
+
+    <div class="main-container">
+
+           
+        
+
+        <section class="key-container">
+            <p class="titel">Climbing up the Walls </p>  
+
+            <section class="title-container">
+                <p class="radiohead">- Radiohead -</p>
+                <p class="perspective">I am the <br> key to the <br> lock in your <br> house</p>
+               </section>
+     
+        </section>
+
+       
+        <section class="toys-container">
+
+            <p class="toys">That keeps your toys in<br> the </p>
+            <div id="basement">Basement</div>
+          
+        </section>
+       
+        <!--basment animation-->
+        <script>
+            // Element auswählen, das beobachtet werden soll, es können auch mehrere sein
+            let target = document.querySelector('#basement');
+            let observer;
+    
+            let options = {
+                root: null,
+                rootMargin: "0px",
+                threshold: [0, 0.25, 0.5, 0.75, 1]
+            };
+            //threshold gibt an, in welchen Schritten eine Aenderung beobachtet werden soll, hier bei 0, 25, 50, 75 und 100%
+    
+            window.addEventListener("load", (event) => {
+                observer = new IntersectionObserver(handleIntersect, options);
+                observer.observe(target);
+            });
+    
+            function handleIntersect(entries, observer) { //es ist ein array von entries, auch wenn bloss ein target beobachtet wird
+                entries.map((entry) => {
+                    if (entry.isIntersecting) {
+                        if (entry.intersectionRatio >= 0.8) { //mit intersection Ratio kann man noch bestimmen, wiviel prozent sichtbar sein müssten, damit animation ausgelöst wird
+                            entry.target.classList.add('animated-basement');
+                        }
+                    } else {
+                        entry.target.classList.remove('animated-basement');
+                    }
+                });
+            }
+        </script>
+
+
+
+
+        <section class="inside-container">
+            <p class="far">And if you get too far </p>
+
+        </section>
+         <div class="split-container">
+    
+        <h2>
+            INSIDE
+            <span>INSIDE</span>
+            <span>INSIDE</span>
+            <span>you only see my reflection</span>
+            <span>you only see my reflection</span>
+        </h2>
+        
+        </div>  
+
+        
+
+      
+   
+      <!--
+        <section class="reflection-container">
+        <div class="reflection">You'll only see my reflection</div>
+        <div class="mirror">You'll only see my reflection</div>
+    </section>
+
+    -->
+
+    <section class="ligth-container">
+        <p class="light">It's always best when the light is</p>
+        <p id="off">off</p>
+    </section>
+
+    <section>
+        <p>I am the pick in the ice</p>
+    </section>
+        
+        <section>
+            <p>Do not cry out or hit the alarm</p>
+        </section>
+
+        <section>
+            <p>You know we're friends till we die</p>
+        </section>
+
+        <section class="die-container">
+        <h1 data-title="die">DIE</h1>
+    </section>
+      
+      
+      
+     
+
+    </div>
+</body>
+</html>

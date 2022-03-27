@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="perspective">
+    
+    I am the <br> key to <br> the lock in<br> your house
+
+</div>
+
+<div class="toys">
+    That keeps your toys in the
+</div>
+<div class="basement">basement</div>
+
+<div class="reflection">You'll only see my reflection</div>
+<div class="mirror">You'll only see my reflection</div>
+
+    <div class="drowning">
+    <img src="/pictures/drowning.png" alt="drowning">
+</div>  
+<script>
+    // Element auswählen, das beobachtet werden soll, es können auch mehrere sein
+    let target = document.querySelector('.drowning');
+    let observer;
+
+    let options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1]
+    };
+    //threshold gibt an, in welchen Schritten eine Aenderung beobachtet werden soll, hier bei 0, 25, 50, 75 und 100%
+
+    window.addEventListener("load", (event) => {
+        observer = new IntersectionObserver(handleIntersect, options);
+        observer.observe(target);
+    });
+
+    function handleIntersect(entries, observer) { //es ist ein array von entries, auch wenn bloss ein target beobachtet wird
+        entries.map((entry) => {
+            if (entry.isIntersecting) {
+                if (entry.intersectionRatio >= 0.5) { //mit intersection Ratio kann man noch bestimmen, wiviel prozent sichtbar sein müssten, damit animation ausgelöst wird
+                    entry.target.classList.add('drowning');
+                }
+            } else {
+                entry.target.classList.remove('drowning');
+            }
+        });
+    }
+</script>
+
+
+
+<div class="off">
+    <div class="lightoff">It's always best when the light is off</div>
+
+</div>
+
+
+<div class="climbingbox">
+    <div class="climbing">Climbing up the walls</div>
+    <div class="climbing">Climbing up the walls</div>
+    <div class="climbing">Climbing up the walls</div>
+    <div class="climbing">Climbing up the walls</div>
+
+</div> 
+
+
+<div class="parent"> </div>
+    
+</body>
+</html>
+

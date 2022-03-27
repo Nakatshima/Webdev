@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=Gloria+Hallelujah&family=Kolker+Brush&family=Roboto:ital,wght@0,900;1,700&display=swap');
+
+
+body{
+    background-color: black;
+}
+
+
+p{
+  color: white;
+  font-size: 89px;
+  font-family:'Roboto', sans-serif;;
+
+}
+
+h1{
+    color: white;
+    font-size: 155px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 89px;
+    text-align: center;
+}
+
+
+em{
+    font-family: normal;
+    font-size: 200%;
+}
