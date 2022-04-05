@@ -314,7 +314,6 @@ h2:hover span:nth-child(4) {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
-    margin-top: 50px;
     margin-left: 2vw;
     text-align: center;
 }
@@ -376,8 +375,6 @@ h2:hover span:nth-child(4) {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
-    margin-top: 50px;
-    margin-right: 50px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -426,7 +423,7 @@ h2:hover span:nth-child(4) {
     margin: 0 auto;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 
 .die-container {
@@ -519,10 +516,6 @@ Responsive
 @media screen and (max-width: 1200px) {
     .drop {
         opacity: 0;
-    }
-    .friends {
-        margin-top: -20vw;
-        margin-left: 15vw;
     }
     .cry-container {
         height: 40vw;
