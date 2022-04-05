@@ -11,9 +11,11 @@ p {
 
 .drowning {
     position: fixed;
-    right: 80px;
-    top: 300px;
+    right: 5vw;
+    top: 20vw;
     opacity: 0.4;
+    width: 30vw;
+    height: auto
 }
 
 .main-container {
@@ -41,7 +43,7 @@ p {
 }
 
 .title {
-    font-size: 21px;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -49,7 +51,7 @@ p {
 }
 
 .radiohead {
-    font-size: 13px;
+    font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -59,10 +61,10 @@ p {
 .key-container {
     display: flex;
     flex-direction: column;
-    /*background-color: pink;*/
+    background-color: pink;
     color: #2B8F9B;
     width: 100vw;
-    height: 70vh;
+    height: 30vw;
     margin: 50px auto;
     justify-content: flex-start;
     align-items: flex-start;
@@ -71,7 +73,7 @@ p {
 .perspective {
     text-align: center;
     transform: skew(-60deg, -10deg) rotate(8deg);
-    font-size: 144px;
+    font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     line-height: 75%;
@@ -86,24 +88,24 @@ p {
 .toys-container {
     display: flex;
     flex-direction: column;
-    /*background-color: lightsalmon;*/
+    background-color: lightsalmon;
     width: 100vw;
-    height: 100vh;
+    height: 80vw;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 450px;
 }
 
 .toys {
-    font-size: 144px;
+    font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
     text-align: center;
+    margin-top: 10vw;
 }
 
 #basement {
-    font-size: 233px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -121,7 +123,7 @@ p {
         transform: translateY(0);
     }
     to {
-        transform: translateY(300px);
+        transform: translateY(20vw);
     }
 }
 
@@ -129,7 +131,7 @@ p {
     display: flex;
     position: relative;
     flex-direction: column;
-    /*background-color: lightgreen;*/
+    background-color: lightgreen;
     width: 100vw;
     height: 110vh;
     margin-top: 0 0;
@@ -138,7 +140,7 @@ p {
 }
 
 .far {
-    font-size: 89px;
+    font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -151,12 +153,12 @@ p {
 
 h2 {
     position: absolute;
-    top: -30%;
+    top: -40%;
     left: 50%;
     transform: translate(-50%, 50%);
     margin: 0;
     padding: 0;
-    font-size: 377px;
+    font-size: 20vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: transparent;
@@ -196,7 +198,7 @@ h2 span:nth-child(3) {
     left: 0;
     transform: translateY(-50%) scaleY(0);
     color: #2B8F9B;
-    font-size: 70px;
+    font-size: 4vw;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
@@ -217,7 +219,7 @@ h2 span:nth-child(4) {
     transform: translateY(50%) scaleY(0) rotateX(180deg);
     color: #2B8F9B;
     opacity: 0.5;
-    font-size: 70px;
+    font-size: 4vw;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
@@ -246,7 +248,7 @@ h2:hover span:nth-child(4) {
 }
 
 .light {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -254,7 +256,7 @@ h2:hover span:nth-child(4) {
 }
 
 #off {
-    font-size: 144px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -279,7 +281,7 @@ h2:hover span:nth-child(4) {
 }
 
 .ice {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -289,7 +291,7 @@ h2:hover span:nth-child(4) {
 }
 
 .cry {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -307,6 +309,10 @@ h2:hover span:nth-child(4) {
     margin-left: 775px;
     justify-content: flex-start;
     align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+    .teardrop: hidden;
 }
 
 .drop {
@@ -351,7 +357,7 @@ h2:hover span:nth-child(4) {
 }
 
 .alarm {
-    font-size: 144px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -362,7 +368,7 @@ h2:hover span:nth-child(4) {
 }
 
 .friends {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -380,7 +386,7 @@ h2:hover span:nth-child(4) {
 }
 
 .alarm-text {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -412,7 +418,7 @@ h2:hover span:nth-child(4) {
 }
 
 #die {
-    font-size: 1200px;
+    font-size: 85vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #a52c3c;
@@ -450,7 +456,7 @@ h2:hover span:nth-child(4) {
 }
 
 .wall {
-    font-size: 144px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -459,4 +465,18 @@ h2:hover span:nth-child(4) {
 
 .wall span {
     writing-mode: vertical-lr;
+}
+
+
+/*------------------------------------------
+Responsive
+--------------------------------------------*/
+
+@media screen and (max-width:360px) {
+    .drowning {
+        position: fixed;
+        right: 80px;
+        top: 300px;
+        opacity: 0;
+    }
 }

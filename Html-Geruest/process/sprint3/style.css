@@ -41,7 +41,7 @@ p {
 }
 
 .title {
-    font-size: 21px;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -49,7 +49,7 @@ p {
 }
 
 .radiohead {
-    font-size: 13px;
+    font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -71,7 +71,7 @@ p {
 .perspective {
     text-align: center;
     transform: skew(-60deg, -10deg) rotate(8deg);
-    font-size: 144px;
+    font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     line-height: 75%;
@@ -95,7 +95,7 @@ p {
 }
 
 .toys {
-    font-size: 144px;
+    font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -103,7 +103,7 @@ p {
 }
 
 #basement {
-    font-size: 233px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -138,7 +138,7 @@ p {
 }
 
 .far {
-    font-size: 89px;
+    font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -156,7 +156,7 @@ h2 {
     transform: translate(-50%, 50%);
     margin: 0;
     padding: 0;
-    font-size: 377px;
+    font-size: 20vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: transparent;
@@ -196,7 +196,7 @@ h2 span:nth-child(3) {
     left: 0;
     transform: translateY(-50%) scaleY(0);
     color: #2B8F9B;
-    font-size: 70px;
+    font-size: 4vw;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
@@ -217,7 +217,7 @@ h2 span:nth-child(4) {
     transform: translateY(50%) scaleY(0) rotateX(180deg);
     color: #2B8F9B;
     opacity: 0.5;
-    font-size: 70px;
+    font-size: 4vw;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
@@ -246,7 +246,7 @@ h2:hover span:nth-child(4) {
 }
 
 .light {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -254,7 +254,7 @@ h2:hover span:nth-child(4) {
 }
 
 #off {
-    font-size: 144px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -279,7 +279,7 @@ h2:hover span:nth-child(4) {
 }
 
 .ice {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -289,7 +289,7 @@ h2:hover span:nth-child(4) {
 }
 
 .cry {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -351,7 +351,7 @@ h2:hover span:nth-child(4) {
 }
 
 .alarm {
-    font-size: 144px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -362,7 +362,7 @@ h2:hover span:nth-child(4) {
 }
 
 .friends {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -380,7 +380,7 @@ h2:hover span:nth-child(4) {
 }
 
 .alarm-text {
-    font-size: 89px;
+    font-size: 6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -450,7 +450,7 @@ h2:hover span:nth-child(4) {
 }
 
 .wall {
-    font-size: 144px;
+    font-size: 12vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #2B8F9B;
@@ -459,4 +459,18 @@ h2:hover span:nth-child(4) {
 
 .wall span {
     writing-mode: vertical-lr;
+}
+
+
+/*------------------------------------------
+Responsive
+--------------------------------------------*/
+
+@media screen and (max-width:360px) {
+    .drowning {
+        position: fixed;
+        right: 80px;
+        top: 300px;
+        opacity: 0;
+    }
 }
