@@ -9,6 +9,11 @@ p {
     padding: 0;
 }
 
+audio {
+    position: absolute;
+    opacity: 0;
+}
+
 .drowning {
     position: fixed;
     right: 5vw;
