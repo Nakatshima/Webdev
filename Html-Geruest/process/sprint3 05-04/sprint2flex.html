@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="drowning" src="/pictures/drowning.png" alt="drowning">
+
+
+    <div class="main-container">
+
+
+        <!--<section class="title-container">
+            <p class="title">Climbing up the Walls</p>
+            <p class="radiohead">- Radiohead -</p>
+
+        </section>-->
+
+
+
+        <section class="key-container">
+            <p class="title">Climbing up the Walls</p>
+            <p class="radiohead">- Radiohead -</p>
+
+            <p class="perspective">I am the <br> key to the <br> lock in your <br> house</p>
+        </section>
+
+        </section>
+
+
+
+        <section class="toys-container">
+
+            <p class="toys">That keeps your toys in<br> the </p>
+            <div id="basement">Basement</div>
+
+        </section>
+
+        <!--basment animation-->
+        <script>
+            // Element auswählen, das beobachtet werden soll, es können auch mehrere sein
+            let target = document.querySelector('#basement');
+            let observer;
+
+            let options = {
+                root: null,
+                rootMargin: "0px",
+                threshold: [0, 0.25, 0.5, 0.75, 1]
+            };
+            //threshold gibt an, in welchen Schritten eine Aenderung beobachtet werden soll, hier bei 0, 25, 50, 75 und 100%
+
+            window.addEventListener("load", (event) => {
+                observer = new IntersectionObserver(handleIntersect, options);
+                observer.observe(target);
+            });
+
+            function handleIntersect(entries, observer) { //es ist ein array von entries, auch wenn bloss ein target beobachtet wird
+                entries.map((entry) => {
+                    if (entry.isIntersecting) {
+                        if (entry.intersectionRatio >= 0.8) { //mit intersection Ratio kann man noch bestimmen, wiviel prozent sichtbar sein müssten, damit animation ausgelöst wird
+                            entry.target.classList.add('animated-basement');
+                            console.log("basement");
+                        }
+                    } else {
+                        entry.target.classList.remove('animated-basement');
+                    }
+                });
+            }
+        </script>
+
+
+
+        <section class="inside-container">
+            <p class="far">And if you get too far </p>
+        </section>
+
+        <div class="inside-container2">
+
+            <h2>
+                INSIDE
+                <span>INSIDE</span>
+                <span>INSIDE</span>
+                <span>you only see my reflection</span>
+                <span>you only see my reflection</span>
+            </h2>
+
+        </div>
+
+
+        <section class="ligth-container">
+            <p class="light">It's always best when the light is</p>
+            <p id="off">off</p>
+        </section>
+
+        <!--Animation OFF-->
+        <script>
+            // Element auswählen, das beobachtet werden soll, es können auch mehrere sein
+            let target1 = document.querySelector('#off');
+            let observer1;
+
+            let options1 = {
+                root: null,
+                rootMargin: "0px",
+                threshold: [0, 0.25, 0.5, 0.75, 1]
+            };
+            //threshold gibt an, in welchen Schritten eine Aenderung beobachtet werden soll, hier bei 0, 25, 50, 75 und 100%
+
+            window.addEventListener("load", (event) => {
+                observer1 = new IntersectionObserver(playAimationOff, options1);
+                observer1.observe(target1);
+            });
+
+            function playAimationOff(entries, observer1) { //es ist ein array von entries, auch wenn bloss ein target beobachtet wird
+                entries.map((entry) => {
+                    if (entry.isIntersecting) {
+                        if (entry.intersectionRatio >= 0.8) { //mit intersection Ratio kann man noch bestimmen, wiviel prozent sichtbar sein müssten, damit animation ausgelöst wird
+                            entry.target.classList.add('animated-off');
+                            console.log("off");
+                        }
+                    } else {
+                        entry.target.classList.remove('animated-off');
+                    }
+                });
+            }
+        </script>
+
+
+        <section>
+            <p class="ice">I am the pick in the ice</p>
+        </section>
+
+
+
+        <section class="cry-container">
+            <p class="cry">Do not cry out or hit the alarm</p>
+
+            <section class="teardrop">
+
+                <div class="drop"></div>
+            </section>
+
+            <div>
+                <p class="friends">You know we're friends till we </p>
+            </div>
+        </section>
+
+
+
+
+        <section class="die-container">
+            <p id="die">die</p>
+        </section>
+
+
+
+
+
+
+        <!--Animation die-->
+
+        <script>
+            // Element auswählen, das beobachtet werden soll, es können auch mehrere sein
+            let target2 = document.querySelector('#die');
+            let observer2;
+
+            let options2 = {
+                root: null,
+                rootMargin: "0px",
+                threshold: [0, 0.25, 0.5, 0.75, 1]
+            };
+            //threshold gibt an, in welchen Schritten eine Aenderung beobachtet werden soll, hier bei 0, 25, 50, 75 und 100%
+
+            window.addEventListener("load", (event) => {
+                observer2 = new IntersectionObserver(playAimationDie, options2);
+                observer2.observe(target2);
+            });
+
+            function playAimationDie(entries, observer2) { //es ist ein array von entries, auch wenn bloss ein target beobachtet wird
+                entries.map((entry) => {
+                    if (entry.isIntersecting) {
+                        if (entry.intersectionRatio >= 1) { //mit intersection Ratio kann man noch bestimmen, wiviel prozent sichtbar sein müssten, damit animation ausgelöst wird
+                            entry.target.classList.add('animated-die');
+
+                        }
+                    } else {
+                        entry.target.classList.remove('animated-die');
+                    }
+                });
+            }
+        </script>
+
+
+        <section class="wall-container">
+            <p class="wall"><span>Climbing up the Walls</span> </p>
+            <p class="wall"><span>Climbing up the Walls</span> </p>
+            <p class="wall"><span>Climbing up the Walls</span> </p>
+            <p class="wall"><span>Climbing up the Walls</span> </p>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
